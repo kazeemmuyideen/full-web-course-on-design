@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.4;
+  /* margin: 50px; */
+}
+
+.border {
+  border: 2px solid black;
+  position: relative;
+}
+
+.sale {
+  position: absolute;
+  letter-spacing: 5px;
+  top: -20px;
+  left: -35px;
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 850px;
+  margin: 50px auto;
+}
+
+.header {
+  font-size: medium;
+  text-align: center;
+  background-color: #6565;
+  color: #000;
+  /* height: 40px; */
+  padding: 20px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+a:link {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  /* display: inline-block; because flex*/
+  /* margin: 10px; */
+}
+.blak {
+  background: #000;
+}
+
+.blu {
+  background-color: blue;
+}
+
+.oranered {
+  background-color: orangered;
+}
+
+.yelow {
+  background-color: yellow;
+}
+.grin {
+  background-color: yellowgreen;
+}
+.bron {
+  background-color: brown;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  list-style: square;
+  /* padding-right: 10px; */
+  margin-bottom: 10px;
+}
+
+.light {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.cart {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.cart:hover {
+  color: #000;
+  background-color: #fff;
+  border-top: 2px solid #000;
+}
+
+/* FLOAT LAYOUT */
+
+/* .first {
+  width: 330px;
+  float: left;
+}
+
+.second {
+  padding: 20px 20px;
+  width: 330px;
+  float: left;
+}
+.third {
+  padding: 20px;
+  padding-right: 40px;
+  width: 330px;
+  float: right;
+}
+
+.price {
+  float: left;
+}
+
+.price::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.light {
+  float: right;
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+.pri::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ */
+
+/* FLEX LAYOUT */
+/* 
+.row{
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.first{
+  flex: 1 ;
+}
+.second{
+  flex: 1 ;
+}
+
+.third{
+  flex: 1 ;
+}
+
+.pri{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 30px;
+}
+*/
+.colors{
+  display: flex;
+  gap: 10px;
+  align-content: space-between;
+
+} 
+
+/* USING GRID */
+.row{
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.header{
+  grid-column: 1/-1;
+}
